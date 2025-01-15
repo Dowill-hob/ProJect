@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#define Main_0114
+//#define Main_0114
 
 #ifdef Main_0114
 /*
@@ -139,43 +139,25 @@ int main() {
 	
 	//int date;
 	//int birth_day;
-	//int days_in_month[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }; // 각 월의 일 수
+
 	//std::cout << "오늘은 몇월 몇일인가요? (0000형식으로 입력할 것) " << std::endl;
 	//std::cin >> date;
 	//std::cout << "생일은 몇월 몇일인가요? (0000형식으로 입력할 것) " << std::endl;
 	//std::cin >> birth_day;
 
-	//// 월과 일을 분리
-	//int current_month = date / 100; // 정수 형이기에 소수점 이하는 소거
-	//int current_day = date % 100;
-	//int birth_month = birth_day / 100;
-	//int birth_day_only = birth_day % 100;
-
-	//// 날짜 차이를 계산
-	//int day_difference = 0;
-
-	//// 같은 달이면 간단히 계산
-	//if (current_month == birth_month) {
-	//	day_difference = abs(current_day - birth_day_only);
+	//if (date == birth_day)
+	//{
+	//	std::cout << "생일 축하합니다!!" << std::endl;
 	//}
-	//else if (current_month > birth_month) { // 현재 날짜가 생일 이후
-	//	// 생일 달의 남은 일수 + 중간 달의 일수 + 현재 달의 경과 일수
-	//	day_difference = days_in_month[birth_month - 1] - birth_day_only;
-	//	for (int i = birth_month; i < current_month - 1; i++) {
-	//		day_difference += days_in_month[i];
-	//	}
-	//	day_difference += current_day;
+	//else if (date > birth_day)
+	//{
+	//	std::cout << "현재 날짜가 생일 보다 앞서 있습니다." << std::endl;
 	//}
-	//else { // 생일이 현재 날짜 이후
-	//	// 현재 달의 남은 일수 + 중간 달의 일수 + 생일 달의 경과 일수
-	//	day_difference = days_in_month[current_month - 1] - current_day;
-	//	for (int i = current_month; i < birth_month - 1; i++) {
-	//		day_difference += days_in_month[i];
-	//	}
-	//	day_difference += birth_day_only;
+	//else
+	//{
+	//	std::cout << "생일이 지났습니다." << std::endl;
 	//}
-
-	//std::cout << "날짜 차이는 " << day_difference << "일입니다." << std::endl;
+	//
 
 
 	int num1;
