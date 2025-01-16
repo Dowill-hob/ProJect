@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-//#define Main_0114
+// #define Main_0114
 
 #ifdef Main_0114
 /*
@@ -59,64 +59,55 @@ int main() {
 
 	return 0;
 }
-
+*/
 int main() {
 	int val = 0;
+	char grade;
 	bool flage = false; // if(flag)형식으로 한줄문으로 디버그 확인용
 	std::cout << "점수를 입력하세요 : ";
 	std::cin >> val;
-	switch (val/10)
+	if (val>=91 && val <= 100 )
 	{
-		case 10:
-			std::cout << "학점은 A 입니다." << std::endl;
-			break;
-		case 9:
-			if (val==90)
-			{
-				std::cout << "학점은 B 입니다." << std::endl;
-			}
-			else
-			{
-				std::cout << "학점은 A 입니다." << std::endl;
-			}
-			break;
-		case 8:
-		case 7:
-			if (val <76)
-			{
-				std::cout << "학점은 C 입니다." << std::endl;
-				break;
-			}
-			std::cout << "학점은 B 입니다." << std::endl;
-			break;
-		case 6:
-		case 5:
-			if (val == 50)
-			{
-				std::cout << "학점은 D 입니다." << std::endl;
-				break;
-			}
-			std::cout << "학점은 C 입니다." << std::endl;
-			break;
-		case 4:
-		case 3:
-			if (val < 35)
-			{
-				std::cout << "학점은 F 입니다." << std::endl;
-				break;
-			}
-			
-			std::cout << "학점은 D 입니다." << std::endl;
-			break;
-
-		default:
-			std::cout << "학점은 F 입니다." << std::endl;
-			break;
+		grade = 'A';
+	}
+	else if (val >= 76 && val <= 90)
+	{
+		grade = 'B';
+	}
+	else if (val >= 51 && val <= 75)
+	{
+		grade = 'C';
+	}
+	else if (val >= 35 && val <= 50)
+	{
+		grade = 'D';
+	}
+	else
+	{
+		grade = 'F';
+	}
+	switch (grade)
+	{
+	case 'A':
+		std::cout << "학점은 A 입니다." << std::endl;
+		break;
+	case 'B':
+		std::cout << "학점은 B 입니다." << std::endl;
+		break;
+	case 'C':
+		std::cout << "학점은 C 입니다." << std::endl;
+		break;
+	case 'D':
+		std::cout << "학점은 D 입니다." << std::endl;
+		break;
+	default:
+		std::cout << "학점은 F 입니다." << std::endl;
+		break;
 	}
 	return 0;
 }
 
-
+/*
 int main() {
 	
 	int val;
