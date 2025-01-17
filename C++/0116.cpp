@@ -1,6 +1,6 @@
-#include <iostream>
-#include <string>
-#define Main4_0116
+//#include <iostream>
+//#include <string>
+//#define Main4_0116
 
 
 #ifdef Main4_0116
@@ -242,7 +242,6 @@ int main() {
 			cout << num << " "<<endl;
 		}
 	}
-	*/
 
 	int arr_i[10] = { 1,2,3,4,5,6,7,8,9,10 };
 
@@ -260,6 +259,23 @@ int main() {
 		cout << arr_i[j]<< endl;
 	}
 	cout << "끝";
+	return 0;
+	*/
+
+	float grade[5] = { 0, };  //const int 로 입력하면 상수로 입력 가능
+	int count = sizeof(grade) / sizeof(grade[0]);
+	float sum = 0;
+	float avg = 0.0;
+	for (int i = 0; i < count; i++)
+	{
+		cout << i + 1 << "번 학생의 성적을 입력하세요 : ";
+		cin >> grade[i];
+		cout << endl;
+		sum += grade[i];
+	}
+	avg = sum / count;
+	cout << "성적 평균 : " << avg << endl;
+	
 	return 0;
 }
 #endif //main4_0116
