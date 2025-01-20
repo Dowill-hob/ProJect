@@ -1,8 +1,8 @@
-#include <iostream>
-#include <string>
-#define Main5_0117
+//#include <iostream>
+//#include <string>
+//#define Main5_0117
 #ifdef Main5_0117
-using namespace std;
+//using namespace std;
 
 //int main() {
 
@@ -141,12 +141,12 @@ using namespace std;
 //	return 0;
 //}
 
-struct Student
-{
-	string name;
-	float scores[3];
-};
-
+//struct Student
+//{
+//	std::string name;
+//	float scores[3];
+//};
+/*
 int main() {
 	int count = 1;
 	Student stu1, stu2, stu3;
@@ -205,6 +205,5 @@ int main() {
 
 
 	return 0;
-}
-
-#endif // Main5_0117
+}*/
+ #endif // Main5_0117
