@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#define Main6_0118
+//#define Main6_0118
 #ifdef Main6_0118
 
 using namespace std;
