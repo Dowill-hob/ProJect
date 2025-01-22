@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#define Main7_0121
+//#define Main7_0121
 #ifdef Main7_0121
 using namespace std;
 //class Cat {
