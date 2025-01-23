@@ -1,7 +1,7 @@
-#include <iostream>
-#include <string>
+//#include <iostream>
+//#include <string>
 
-#define Main8_0122
+//#define Main8_0122
 #ifdef Main8_0122
 
 using namespace std;
